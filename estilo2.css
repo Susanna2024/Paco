@@ -1,0 +1,177 @@
+
+ 
+
+
+
+    body {
+        background: #8acdeb;
+        color: blue;
+
+      }
+   
+
+      #container {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .steam {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 60%;
+        background-color: #fff;
+        z-index: 0;
+        opacity: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      #steam1 {
+        animation: steam1 1000ms ease-out infinite;
+      }
+
+      
+      @keyframes steam1 {
+        0% {transform: translateY(0) translateX(0) scale(0.15); opacity: 0.2;}
+        100% {transform: translateY(-200px) scale(1); opacity: 0.2;}
+      }
+      
+      #steam2 {
+        animation: steam2 900ms ease-out  infinite;
+      }
+      
+      
+      @keyframes steam2 {
+        0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+        100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+      }
+      
+   
+      
+      #cup-body {
+        position: absolute;
+        height: 100px;
+        width: 200px;
+        border-radius: 0 0 150px 150px;
+        background-color: #fff;
+        margin-top: -30px;
+        margin-bottom: 80px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+    
+      #cup-handle {
+        position: relative;
+        height: 25px;
+        width: 50px;
+        border-radius: 0 150px 150px 0;
+        border: 15px solid #fff;
+        margin-bottom: 60px;
+        margin-left: 150px;
+        margin-top: -25px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      #saucer {
+        position: absolute;
+        height: 30px;
+        width: 220px;  
+        border-radius: 0 0 100px 100px;
+        background-color: #fff;
+        margin-top:52px;
+        margin-left: 2px;
+        z-index: 3;
+      }
+      
+      #shadow {
+        position: absolute;
+        height: 10px;
+        width: 240px;
+        border-radius: 50%;
+        margin-top: 80px;
+        margin-left: 6px;
+        background-color: blue;
+      }
+      
+    .scritta{
+      font-size: 25px;
+      justify-content: center;
+      text-align: center;
+      margin-top: 155px;
+  
+    }
+
+    #slide {
+      animation: slide1 1s 1;
+    }
+
+    
+    @keyframes slide1 {
+      0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    
+
+    }
+    
+
+.battery {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5PX;
+  width: 300px;
+  border: 10px solid blue;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.battery:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  height: 88px;
+  background-color: blue;
+  border-radius: 5px;
+  animation: full 5s linear infinite;
+}
+
+.battery:after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 28px;
+  width: 15px;
+  height: 50px;
+  background-color: blue;
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+@keyframes full {
+  0% {
+    width: 0%;
+    background-color: red; 
+  }
+  35% {
+    width: 24%;
+    background-color: yellow 
+ }
+  50% {
+    width: 48%;
+  }
+  75% {
+    width: 72%;
+  }
+  100% {
+    width: 96%;
+background-color: green;  }
+}
+
+
+
